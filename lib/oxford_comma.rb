@@ -2,6 +2,7 @@ def oxford_comma(array)
   sentence = ""
   if array.length == 1
     sentence << array.join
-  end
+  elsif array.length == 2
+    sentence << array[0] + "and" + array[1]
   return sentence
 end
